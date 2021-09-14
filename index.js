@@ -2,6 +2,10 @@ function sum(...arr) {
     return arr.reduce((a, c) => a + c, 0);
 }
 
+function isEmpty(value) {
+    return value === null || value === undefined || value === '' || value === {} || value === [] || value.length === 0;
+}
+
 function isMobile(mobile) {
     return /^1[3-9]\d{9}$/.test(mobile);
 }
@@ -14,6 +18,7 @@ function parseCookie(cookieStr) {
 }
 
 export {
+    isEmpty,
     isMobile,
     sum,
     parseCookie
