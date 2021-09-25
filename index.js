@@ -1,5 +1,5 @@
 function sum(...arr) {
-    return arr.reduce((a, c) => a + c, 0);
+    return arr.reduce((a, c) => a + c);
 }
 
 function isEmpty(value) {
